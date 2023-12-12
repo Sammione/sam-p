@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&family=Poppins&display=swap');
+.raw{
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.raw.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.reveal{
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.hero-data{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:30px;
+    height: 85vh;
+}
+.hero-data-left h1{
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(218, 36, 36);
+    margin:3vh 0;
+}
+.hero-data-left blockquote{
+    width:400px;
+    font-size: 16px;
+}
+.hero-data-left p{
+    color: rgb(63, 60, 60);
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 3vh;
+}
+.hero-data-left a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(218, 36, 36);
+    padding:8px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+a{
+    transition: all 0.25s ease-in-out;
+}
+.anc:hover{
+    background-color: rgb(66, 57, 57);
+}
+.hero-data-right{
+    width:450px;
+    height: 450px;
+    /* filter: url('#goo'); */
+    background: url(service-3.webp);
+    background-size: cover;
+    background-position: center;
+     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+     box-shadow: 7px 9px 0px 1px rgb(26, 25, 25);
+}
+.service, .about, .project, .hero-data{
+    padding:20px 10%;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+.service{
+    margin-top: 5vh;
+}
+.service h2, .about h2, .project h2{
+    color: rgb(66, 57, 57);
+    font-size: 28px;
+    font-family: Kdam Thmor Pro ;
+}
+.service hr, .about hr, .project hr{
+    width:80px;
+}
+.service section{
+    margin:5vh 0 3vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.service-data{
+    flex-basis: 45%;
+    flex-shrink: 0;
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-color: rgb(218, 36, 36);
+    padding:15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    transition: all 0.25s ease;
+
+}
+.service-data:hover{
+    transform: scale(1.05);
+}
+.service-data img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(240, 184, 184);
+    border-radius: 70%;
+}
+.service-info h3{
+    font-size: 15px;
+    color:rgb(253, 201, 201);
+    font-family: roboto;
+    margin:1vh 0;
+}
+.service-info p{
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: azure;
+    line-height: 18px;
+}
+.about{
+    background-color: rgb(182, 25, 25);
+    height: max-content;
+}
+.about h2{
+    color: rgb(253, 201, 201);
+}
+.about-me-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top:20px;
+}
+.about-me-data img{
+    width:auto;
+    height: 220px;
+    border-radius: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-me p{
+    color: white;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: justify;
+}
+.about-me p:nth-child(2){
+    margin-top:20px;
+}
+.about-me p::first-letter{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-me a{
+    text-decoration: none;
+    color: rgb(218, 36, 36);
+    background-color: white;
+    padding:5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight:600;
+    margin-top: 15px;
+}
+footer{
+    background-color: rgb(66, 57, 57);
+    padding:10px;
+    box-sizing:border-box ;
+    text-align: center;
+}
+footer p{
+    color: whitesmoke;
+}
+.project{
+    margin-bottom: 10vh;
+}
+.project section{
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:5px;
+    padding:20px;
+    box-sizing: border-box;
+}
+.project-data{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.25s ease;
+}
+.project-data:hover{
+    background-color: rgb(238, 201, 201);
+}
+.project-data h3{
+    font-size: 14px;
+}
+.project-data button{
+    all:unset;
+    background-color: rgb(218, 36, 36);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+.pdf-view{
+    position: fixed;
+    top:3vh;
+    left: 25%;
+    width:45%;
+    height:95vh;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: none;
+    z-index: 10;
+    background-color: black;
+}
+.pdf-view.active{
+    display: block;
+}
+.pdf-view p{
+    color: white;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 300px) and (max-width:998px) {
+    .hero-data{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-data-left, .hero-data-right{
+        width: 100%;
+    }
+    .hero-data-right{
+        transition: all 0.25s ease;
+        animation: bounce 2s infinite alternate;
+    }
+    @keyframes bounce {
+        from{
+            transform: translateY(-5px);
+        }
+        to{
+            transform: translateY(0px);
+        }
+    }
+    .service, .about, .project, .hero-data{
+        padding:30px 5%;
+    }
+    .service h2, .about h2, .project h2{
+        font-size: 22px;
+    }
+    .hero-data-left blockquote{
+        width:320px;
+    }
+    .hero-data-left h1{
+        font-size: 35px;
+    }
+    .about-me-data{
+        flex-direction: column;
+    }
+    .about-me-data img{
+        width: auto;
+        height: 250px;
+    }
+    .project-data h3{
+        font-size: 12px;
+    }
+    .project-data button{
+        font-size: 11px;
+    }
+    .pdf-view{
+        left: 2.5%;
+        width:95%;
+    }
+    .service-data{
+        flex-basis: 45%;
+        flex-direction: column;
+    }
+    .service-data img{
+        width: 40px;
+        height: 40px;
+    }
+    .service-info h3{
+        font-size: 12px;
+    }
+    .service-info p{
+        font-size: 10px;
+        word-break: break-all;
+    }
+}
+
+
